@@ -1,0 +1,32 @@
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  background-color: var(--YELLOW);
+  width: 100%;
+  max-width: 26.5rem;
+  height: 6.9rem;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: var(--BLACK);
+
+    span {
+      color: var(--WHITE);
+    }
+
+    img {
+      filter: invert(1);
+    }
+  }
+
+  span {
+    font-family: "Road Rage", sans-serif;
+    font-size: 4.6rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.3px;
+    color: var(--BLACK);
+  }
+}

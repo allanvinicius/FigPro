@@ -1,0 +1,49 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.6rem;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--BLACK-PRIMARY);
+}
+
+body {
+  background-color: var(--WHITE);
+  color: var(--BLACK-PRIMARY);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Road Rage", sans-serif;
+}
