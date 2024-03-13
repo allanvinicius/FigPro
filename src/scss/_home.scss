@@ -263,3 +263,110 @@
     margin-left: -13.3rem;
   }
 }
+
+.s-about {
+  position: relative;
+  padding-top: 27.1rem;
+  padding-bottom: 16.2rem;
+
+  .title {
+    text-align: center;
+
+    small {
+      font-size: 2.2rem;
+      font-weight: 300;
+      line-height: 155.3%;
+      color: var(--GRAY-TERCIARY);
+
+      strong {
+        font-size: 2.2rem;
+        color: var(--YELLOW);
+      }
+    }
+
+    h2 {
+      font-size: 45.9rem;
+      font-weight: 400;
+      line-height: 0.7;
+      letter-spacing: 27.54px;
+      text-transform: uppercase;
+      margin-top: 2.4rem;
+      color: var(--BLACK-PRIMARY);
+    }
+  }
+
+  .text-about {
+    position: relative;
+    margin-top: -35rem;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 5.7rem;
+
+    .description {
+      padding-bottom: 13.9rem;
+
+      p {
+        width: 100%;
+        max-width: 44.3rem;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 155.3%;
+        color: var(--BLACK-PRIMARY);
+      }
+    }
+  }
+
+  .arrow {
+    position: absolute;
+    bottom: -13%;
+    right: 20%;
+    z-index: 1;
+  }
+}
+
+.s-stickers {
+  background-color: var(--GRAY-FOUR);
+  padding-top: 11.1rem;
+  padding-bottom: 8.3rem;
+
+  .title {
+    position: relative;
+    width: 100%;
+    max-width: 45rem;
+    text-align: center;
+    margin: 0 auto;
+
+    small {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-family: "Rock Salt", sans-serif;
+      font-size: 2.5rem;
+      color: var(--YELLOW);
+    }
+
+    h2 {
+      display: flex;
+      align-items: center;
+      position: relative;
+      gap: 3.8rem;
+
+      span {
+        font-family: "Road Rage", sans-serif;
+        font-size: 15rem;
+        font-weight: 400;
+        line-height: 155.3%;
+        letter-spacing: 12px;
+        text-transform: uppercase;
+        color: var(--BLACK-PRIMARY);
+      }
+
+      img {
+        position: absolute;
+        right: 11.1rem;
+      }
+    }
+  }
+}
