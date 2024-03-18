@@ -330,6 +330,8 @@
   background-color: var(--GRAY-FOUR);
   padding-top: 11.1rem;
   padding-bottom: 8.3rem;
+  position: relative;
+  z-index: 1;
 
   .title {
     position: relative;
@@ -449,7 +451,7 @@
               height: 4.4rem;
               background-color: var(--YELLOW);
               border-radius: 50%;
-              transition: all .3s ease;
+              transition: all 0.3s ease;
 
               &:hover {
                 background-color: var(--BLACK-PRIMARY);
@@ -463,5 +465,86 @@
         }
       }
     }
+  }
+}
+
+.s-world {
+  padding-top: 11.3rem;
+  padding-bottom: 13.4rem;
+  background: url("../img/bg-world.png") no-repeat bottom center;
+  position: relative;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 43.1rem;
+    font-weight: 400;
+    letter-spacing: 47.41px;
+    line-height: 0.7;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--BLACK-PRIMARY);
+
+    span {
+      display: block;
+      font-size: 2.5rem;
+      font-weight: 500;
+      line-height: 155.3%;
+      letter-spacing: 5.75px;
+      color: var(--YELLOW);
+      margin-top: 2.9rem;
+    }
+  }
+
+  p {
+    width: 100%;
+    max-width: 63.2rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--GRAY-09);
+    margin-top: 5.4rem;
+    margin-bottom: 6.3rem;
+  }
+
+  .ilustra {
+    position: absolute;
+    pointer-events: none;
+
+    &.gaviao {
+      left: 0;
+      top: -4.4rem;
+    }
+
+    &.tigre {
+      bottom: 0;
+      left: 0;
+    }
+
+    &.polvo {
+      right: 0;
+      top: -4.4rem;
+    }
+
+    &.coruja {
+      bottom: 0;
+      right: 0;
+    }
+  }
+
+  .ilustras-right {
+    position: absolute;
+    right: 0;
+    top: -4.4rem;
+    pointer-events: none;
+  }
+
+  @media (min-width: 1441px) {
+    background-size: cover;
   }
 }
