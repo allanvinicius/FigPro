@@ -331,7 +331,6 @@
   padding-top: 11.1rem;
   padding-bottom: 8.3rem;
   position: relative;
-  z-index: 1;
 
   .title {
     position: relative;
@@ -473,6 +472,7 @@
   padding-bottom: 13.4rem;
   background: url("../img/bg-world.png") no-repeat bottom center;
   position: relative;
+  overflow: hidden;
 
   .title {
     display: flex;
