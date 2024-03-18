@@ -474,42 +474,42 @@
   background: url("../img/bg-world.png") no-repeat bottom center;
   position: relative;
 
-  .container {
+  .title {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  }
 
-  h2 {
-    font-size: 43.1rem;
-    font-weight: 400;
-    letter-spacing: 47.41px;
-    line-height: 0.7;
-    text-align: center;
-    text-transform: uppercase;
-    color: var(--BLACK-PRIMARY);
+    h2 {
+      font-size: 43.1rem;
+      font-weight: 400;
+      letter-spacing: 47.41px;
+      line-height: 0.7;
+      text-align: center;
+      text-transform: uppercase;
+      color: var(--BLACK-PRIMARY);
 
-    span {
-      display: block;
-      font-size: 2.5rem;
-      font-weight: 500;
-      line-height: 155.3%;
-      letter-spacing: 5.75px;
-      color: var(--YELLOW);
-      margin-top: 2.9rem;
+      span {
+        display: block;
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 155.3%;
+        letter-spacing: 5.75px;
+        color: var(--YELLOW);
+        margin-top: 2.9rem;
+      }
     }
-  }
 
-  p {
-    width: 100%;
-    max-width: 63.2rem;
-    font-size: 1.6rem;
-    font-weight: 400;
-    text-align: center;
-    color: var(--GRAY-09);
-    margin-top: 5.4rem;
-    margin-bottom: 6.3rem;
+    p {
+      width: 100%;
+      max-width: 63.2rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      text-align: center;
+      color: var(--GRAY-09);
+      margin-top: 5.4rem;
+      margin-bottom: 6.3rem;
+    }
   }
 
   .ilustra {
