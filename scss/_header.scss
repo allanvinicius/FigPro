@@ -13,6 +13,10 @@ header {
     justify-content: space-between;
   }
 
+  .btn-mobile {
+    display: none;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -53,5 +57,23 @@ header {
     display: flex;
     align-items: center;
     gap: 3rem;
+  }
+
+  @media (max-width: 560px) {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+    .btn-mobile {
+      display: block;
+    }
+
+    .logo {
+      width: 100%;
+      max-width: 15.9rem;
+    }
+
+    nav {
+      display: none;
+    }
   }
 }
