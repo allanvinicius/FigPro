@@ -112,9 +112,101 @@
     right: 0;
   }
 
+  .user-mobile {
+    display: none;
+
+    align-items: center;
+    gap: 1.6rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        width: 4.7rem;
+        height: 4.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        border: 1px solid var(--YELLOW);
+        background-color: var(--WHITE);
+
+        &:first-of-type {
+          margin-right: -1.5rem;
+          position: relative;
+          z-index: 0;
+        }
+
+        &:nth-of-type(2) {
+          position: relative;
+          z-index: 1;
+        }
+
+        &:last-of-type {
+          position: relative;
+          z-index: 2;
+          margin-left: -1.5rem;
+        }
+      }
+    }
+
+    span {
+      color: var(--BLACK-SECONDARY);
+      font-weight: 700;
+      font-size: 1.4rem;
+      line-height: 155.3%;
+    }
+  }
+
   @media (max-width: 1440px) {
     .ilustra {
       right: -36rem;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 18.7rem;
+    padding-bottom: 5rem;
+    height: 100%;
+    overflow: hidden;
+
+    .left-text {
+      .title {
+        h1 {
+          font-size: 7.3rem;
+          text-align: center;
+
+          span {
+            font-size: 7.3rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 1.4rem;
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      button {
+        margin: 0 auto;
+        margin-top: 3rem;
+      }
+
+      .users {
+        display: none;
+      }
+    }
+
+    .ilustra {
+      position: relative;
+      right: -14rem;
+    }
+
+    .user-mobile {
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -200,6 +292,53 @@
       }
     }
   }
+
+  @media (max-width: 991px) {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+
+    p {
+      font-size: 1.3rem;
+    }
+
+    .card-info {
+      height: 100%;
+
+      .ilustra {
+        width: 100%;
+        max-width: 12rem;
+      }
+
+      .content {
+        padding-right: 0;
+        justify-content: center;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        ul {
+          flex-direction: column;
+
+          li {
+            padding: 0;
+
+            &:nth-child(2) {
+              padding-top: 2.7rem;
+            }
+
+            &:last-child {
+              padding-top: 2.7rem;
+            }
+
+            &:not(:last-child) {
+              border-right: none;
+              border-bottom: 1px solid var(--WHITE);
+              padding-bottom: 2.7rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .s-how-to-use {
@@ -262,6 +401,52 @@
     bottom: -2.4rem;
     margin-left: -13.3rem;
   }
+
+  @media (max-width: 991px) {
+    padding-top: 8rem;
+
+    .container {
+      flex-direction: column-reverse;
+    }
+
+    .content-left {
+      margin-top: 4rem;
+
+      h2 {
+        bottom: 60rem;
+        left: -7rem;
+        font-size: 6.4rem;
+      }
+
+      ul {
+        li {
+          h3 {
+            font-size: 1.4rem;
+          }
+
+          p {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+
+    .image {
+      width: 100%;
+      max-width: 27.5rem;
+      margin-left: 7rem;
+    }
+
+    .btn-primary {
+      max-width: 17.5rem;
+      height: 5.6rem;
+      margin-left: -8.5rem;
+
+      span {
+        font-size: 2.2rem;
+      }
+    }
+  }
 }
 
 .s-about {
@@ -323,6 +508,43 @@
     bottom: -13%;
     right: 20%;
     z-index: 1;
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 10rem;
+
+    .title {
+      small {
+        font-size: 1.6rem;
+
+        strong {
+          font-size: 1.6rem;
+        }
+      }
+
+      h2 {
+        font-size: 14.3rem;
+        letter-spacing: 6.54px;
+        margin-top: 0.7rem;
+      }
+    }
+
+    .text-about {
+      margin-top: -12rem;
+      flex-direction: column;
+
+      .description {
+        p {
+          max-width: 100%;
+          font-size: 1.3rem;
+        }
+      }
+    }
+
+    .arrow {
+      max-width: 27.5rem;
+      bottom: 0;
+    }
   }
 }
 
@@ -459,6 +681,46 @@
                   filter: invert(1);
                 }
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-bottom: 4rem;
+
+    .title {
+      h2 {
+        gap: 1.8rem;
+
+        span {
+          font-size: 12rem;
+        }
+
+        img {
+          width: 100%;
+          max-width: 7rem;
+          right: 7rem;
+        }
+      }
+    }
+
+    .all-sticker {
+      grid-template-columns: 1fr;
+      row-gap: 7rem;
+      margin-top: 10rem;
+
+      .card-sticker {
+        .content-sticker {
+          .image {
+            max-width: 15rem;
+          }
+
+          .info {
+            p {
+             font-size: 1.3rem;
             }
           }
         }
